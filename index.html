@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com; frame-src https://*.firebaseapp.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>NJ Podology — подолог: лечение вросшего ногтя, грибка, мозолей, аппаратный педикюр</title>
+<meta name="description" content="NJ Podology: приём подолога. Лечение вросшего ногтя, грибка ногтей и кожи, обработка натоптышей и мозолей, аппаратный педикюр. Онлайн-запись, прайс-лист, отзывы.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NJ Podology — подолог">
+<meta property="og:description" content="Здоровье ваших ног: вросший ноготь, грибок, мозоли, аппаратный педикюр. Запишитесь на приём онлайн.">
+<meta property="og:image" content="logo.png">
+<meta name="theme-color" content="#f7f6fd">
+<link rel="icon" href="logo.png" type="image/png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalBusiness","name":"NJ Podology","description":"Подолог: лечение вросшего ногтя, грибка, мозолей, аппаратный педикюр","telephone":"+77757714343","image":"logo.png"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="NJ Podology, на главную">
+      <img class="logo-img" src="logo.png" alt="" width="52" height="52">
+      <span><b>NJ Podology</b><small>Здоровье ваших ног</small></span>
+    </a>
+    <nav class="main" id="nav" aria-label="Основное меню">
+      <a href="#uslugi">Услуги</a>
+      <a href="#price">Прайс</a>
+      <a href="#specialist">О специалисте</a>
+      <a href="#otzyvy">Отзывы</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <a class="btn" href="#zapis">Записаться на приём <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag"><i></i>Профессиональный подолог · Астана</span>
+      <h1>Здоровые и красивые ноги — шаг к <em>уверенности</em></h1>
+      <p class="lead">Комплексный уход, лечение и профилактика проблем стоп и ногтей</p>
+      <div class="cta">
+        <a class="btn" href="#zapis">Записаться онлайн <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+        <a class="btn ghost" href="#specialist">Узнать больше</a>
+      </div>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="photo">
+        <img src="foot.jpg" alt="Стопа" width="816" height="940">
+        <div id="zones"></div>
+        <div id="hots"></div>
+      </div>
+      <div class="hint">Нажмите на точку на стопе</div>
+
+      <div class="info" id="info" aria-live="polite">
+        <div class="eyebrow">Услуга</div>
+        <h3 id="infoTitle"></h3>
+        <p id="infoText"></p>
+        <a class="btn small" id="infoBook" href="#zapis">Записаться на эту услугу <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="trust">
+    <div><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 4v8c0 7-5 12-11 14C10 27 5 22 5 15V7z"/><path d="M11 16l4 4 7-8" stroke-linecap="round" stroke-linejoin="round"/></svg>Стерильные инструменты</div>
+    <div><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 5h14l5 7-12 16L4 12z" stroke-linejoin="round"/><path d="M4 12h24M12 5l4 23M20 5l-4 23" stroke-linejoin="round"/></svg>Аппаратные методики</div>
+    <div><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27C6 20 4 14 4 10a6 6 0 0112-1 6 6 0 0112 1c0 4-2 10-12 17z" stroke-linejoin="round"/></svg>Индивидуальный подход</div>
+  </div>
+
+  <section id="uslugi">
+    <div class="sec-head">
+      <div><span class="tag">Наши услуги</span><h2>Забота о ваших ногах <em>в любом возрасте</em></h2></div>
+      <a class="link-arrow" href="#zapis">Записаться →</a>
+    </div>
+    <div class="rail">
+      <button class="arrow" id="prev" aria-label="Назад">←</button>
+      <div class="cards" id="cards"></div>
+      <button class="arrow" id="next" aria-label="Вперёд">→</button>
+    </div>
+  </section>
+
+  <section id="price">
+    <div class="sec-head">
+      <div><span class="tag">Прайс-лист</span><h2>Стоимость <em>услуг</em></h2></div>
+    </div>
+    <div class="price-groups" id="priceGroups"></div>
+    <p class="price-note">Цены указаны в тенге. Точная стоимость зависит от состояния стоп и объёма работы, мастер назовёт её на консультации.</p>
+  </section>
+
+  <section id="specialist">
+    <div class="duo">
+      <div class="left">
+      <div class="about">
+        <img src="photo.jpg" alt="Подолог NJ Podology в кабинете" width="888" height="1100">
+        <div>
+          <span class="tag">О специалисте</span>
+          <h2>Профессиональный подолог с заботой о вас</h2>
+          <p>Помогаю при вросших ногтях, грибке, мозолях, бородавках и трещинах, провожу аппаратный педикюр и подбираю ортопедические стельки.</p>
+          <ul class="facts">
+            <li>Опыт работы более 5 лет</li>
+            <li>Прием детей с рождения</li>
+            <li>Работа с людьми с сахарным диабетом</li>
+          </ul>
+          <a class="link-arrow" href="#faq">Частые вопросы →</a>
+        </div>
+      </div>
+      <figure class="cab">
+        <img src="serv-pedicure.jpg" alt="Кабинет: автоклав и ультразвуковая очистка инструментов" width="800" height="525" loading="lazy">
+        <figcaption>Наш кабинет: инструменты проходят очистку и стерилизацию перед каждым приёмом</figcaption>
+      </figure>
+      </div>
+
+      <form class="book" id="zapis" novalidate>
+        <h3>Запишитесь на приём</h3>
+        <p class="sub">Выберите удобную дату и время</p>
+        <div class="days" id="days" role="group" aria-label="Дата"></div>
+        <div class="times" id="times" role="group" aria-label="Время"></div>
+        <div class="f">Популярные услуги</div>
+        <div class="pop" id="popSvc"></div>
+        <label class="f" for="svcSel">Услуга</label>
+        <select class="field" id="svcSel"></select>
+        <div class="two">
+          <div><label class="f" for="nm">Имя</label><input class="field" id="nm" autocomplete="name" maxlength="80" placeholder="Как к вам обращаться"></div>
+          <div><label class="f" for="ph">Телефон</label><input class="field" id="ph" type="tel" autocomplete="tel" maxlength="30" placeholder="+7 700 000 00 00"></div>
+        </div>
+        <input class="hp" id="bkHp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <p class="err" id="err" role="alert"></p>
+        <button class="btn" type="submit">Отправить заявку мастеру <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
+        <div class="done" id="done"></div>
+      </form>
+    </div>
+  </section>
+
+  <section id="otzyvy">
+    <div class="sec-head">
+      <div><span class="tag">Отзывы</span><h2>Спасибо, что доверяете <em>нам</em> ♥</h2></div>
+    </div>
+    <div class="revs" id="revs"></div>
+    <form class="revform" id="revForm" novalidate>
+      <div class="rf-l"><h3>Оставить отзыв</h3><p class="sub">Расскажите о своём визите. Отзыв появится на сайте после проверки мастером.</p><div class="stars-input" id="starsIn" role="group" aria-label="Оценка">
+        <button type="button" data-v="1" aria-label="1 звезда" aria-pressed="false">★</button>
+        <button type="button" data-v="2" aria-label="2 звезды" aria-pressed="false">★</button>
+        <button type="button" data-v="3" aria-label="3 звезды" aria-pressed="false">★</button>
+        <button type="button" data-v="4" aria-label="4 звезды" aria-pressed="false">★</button>
+        <button type="button" data-v="5" aria-label="5 звёзд" aria-pressed="false">★</button>
+      </div></div>
+      <div class="rf-r">
+      <div class="two">
+        <div><label class="f" for="rvName">Имя</label><input class="field" id="rvName" maxlength="60" autocomplete="given-name"></div>
+        <div class="hpwrap"><label for="rvHp">Не заполняйте</label><input class="field" id="rvHp" tabindex="-1" autocomplete="off"></div>
+      </div>
+      <label class="f" for="rvText">Отзыв</label>
+      <textarea class="field" id="rvText" rows="4" maxlength="600" placeholder="Что понравилось?"></textarea>
+      <p class="err" id="rvErr" role="alert"></p>
+      <button class="btn" type="submit">Отправить отзыв</button>
+      <p class="rv-ok" id="rvOk" hidden>Спасибо! Отзыв появится на сайте после проверки мастером.</p>
+      </div>
+    </form>
+  </section>
+
+  <section id="faq">
+    <div class="sec-head"><div><span class="tag">FAQ</span><h2>Частые <em>вопросы</em></h2></div></div>
+    <div class="faq">
+      <details open><summary>Это больно?</summary><p>Процедуры выполняются бережно. Если какая-то зона чувствительна, скажите об этом мастеру, и он подберёт мягкий способ обработки.</p></details>
+      <details><summary>Как подготовиться к приёму?</summary><p>Специальной подготовки не нужно. Придите в удобной обуви и расскажите, что вас беспокоит: так мастер сразу составит план ухода.</p></details>
+      <details><summary>Сколько длится приём?</summary><p>Время зависит от услуги и состояния стоп. При записи мастер подскажет, сколько нужно выделить.</p></details>
+      <details><summary>Как записаться?</summary><p>Выберите дату и время в форме выше. Заявка уйдёт мастеру в WhatsApp, и запись подтвердят вам лично.</p></details>
+    </div>
+  </section>
+
+  <section id="kontakty">
+    <div class="sec-head"><div><span class="tag">Контакты</span><h2>Как нас <em>найти</em></h2></div></div>
+    <div class="contacts">
+      <div class="c"><h3>Телефон</h3><p><a id="cPhone" href="#"></a></p></div>
+      <div class="c"><h3>Адрес</h3><p id="cAddr"></p></div>
+      <div class="c"><h3>Приём</h3><p>Приём с 10:00 до 20:00. Запись по времени.</p></div>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#top"><img class="logo-img" src="logo.png" alt="" width="52" height="52"><span><b>NJ Podology</b><small>Здоровье ваших ног</small></span></a>
+    <nav aria-label="Меню в подвале"><a href="#uslugi">Услуги</a><a href="#price">Прайс</a><a href="#specialist">О специалисте</a><a href="#otzyvy">Отзывы</a><a href="#faq">FAQ</a><a href="#kontakty">Контакты</a></nav>
+    <div class="meta"><span id="fPhone"></span><span id="fAddr"></span><span class="soc" id="soc"></span><a class="adminlink" href="admin.html">Вход для мастера</a></div>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="config.js"></script>
+<script src="db.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

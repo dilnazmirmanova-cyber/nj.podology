@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com; frame-src https://*.firebaseapp.com; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="noindex">
+<title>NJ Podology: панель мастера</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="admin">
+
+<header class="adm-top">
+  <a class="adm-brand" href="index.html"><img class="logo-img" src="logo.png" alt="" width="40" height="40"><span><b>NJ Podology</b><small>Панель мастера</small></span></a>
+  <button class="btn ghost small" id="logout" type="button">Выйти</button>
+</header>
+
+<div class="banner" id="banner" hidden></div>
+
+<main class="adm">
+  <!-- вход -->
+  <section class="adm-card login" id="login">
+    <h1>Вход для мастера</h1>
+    <form id="loginForm" novalidate>
+      <label class="f" for="lgEmail">Электронная почта</label>
+      <input class="field" id="lgEmail" type="email" autocomplete="username">
+      <label class="f" for="lgPass">Пароль</label>
+      <input class="field" id="lgPass" type="password" autocomplete="current-password">
+      <p class="err" id="lgErr" role="alert"></p>
+      <button class="btn" type="submit">Войти</button>
+    </form>
+  </section>
+
+  <!-- панель -->
+  <section id="app" hidden>
+    <nav class="tabs" role="tablist" aria-label="Разделы">
+      <button type="button" role="tab" data-tab="time" aria-selected="true">Время</button>
+      <button type="button" role="tab" data-tab="bk" aria-selected="false">Заявки <span class="badge" id="bkBadge" hidden>0</span></button>
+      <button type="button" role="tab" data-tab="rv" aria-selected="false">Отзывы <span class="badge" id="rvBadge" hidden>0</span></button>
+    </nav>
+
+    <!-- Время -->
+    <div class="adm-card" id="tab-time">
+      <h2>Когда вас нет</h2>
+      <p class="hintline">Выберите день, затем нажмите на время: оно закроется для записи. Нажмите ещё раз, чтобы снова открыть.</p>
+      <div class="adm-days" id="admDays" role="group" aria-label="День"></div>
+      <div class="adm-actions">
+        <button class="btn ghost small" type="button" id="closeDay">Закрыть весь день</button>
+        <button class="btn ghost small" type="button" id="openDay">Открыть весь день</button>
+      </div>
+      <div class="adm-times" id="admTimes"></div>
+      <ul class="legend"><li><i class="lg free"></i>Свободно</li><li><i class="lg closed"></i>Закрыто вами</li><li><i class="lg booked"></i>Записан клиент</li></ul>
+    </div>
+
+    <!-- Заявки -->
+    <div class="adm-card" id="tab-bk" hidden>
+      <h2>Заявки на приём</h2>
+      <div class="list" id="bkList"></div>
+    </div>
+
+    <!-- Отзывы -->
+    <div class="adm-card" id="tab-rv" hidden>
+      <h2>Отзывы клиентов</h2>
+      <p class="hintline">Новые отзывы не видны на сайте, пока вы не нажмёте «Опубликовать».</p>
+      <h3 class="sub-h">Ждут проверки</h3>
+      <div class="list" id="rvPending"></div>
+      <h3 class="sub-h">Опубликованные</h3>
+      <div class="list" id="rvDone"></div>
+    </div>
+  </section>
+</main>
+
+<!-- карточка записи -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="mdTitle">
+    <h3 id="mdTitle">Запись</h3>
+    <div id="mdBody"></div>
+    <div class="modal-actions" id="mdActions"></div>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="config.js"></script>
+<script src="db.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
